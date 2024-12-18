@@ -25,6 +25,7 @@
 	
 	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
+	        <maven.compiler.source>8</maven.compiler.source> <!-- Updated to 8 -->
 	</properties>	
 	<dependencies>
 		<dependency>
