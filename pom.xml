@@ -7,6 +7,21 @@
 	<version>3.0.5</version>
 	<name>Java Home myweb</name>
 	<url>http://maven.apache.org</url>
+
+	<build>
+         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Updated version -->
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+      </build>
 	
 	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
